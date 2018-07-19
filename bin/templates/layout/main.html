@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" media="screen" href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" />
+	<link rel="stylesheet" media="screen" href="/css/custom.css" th:href="@{/css/custom.css}" />
+	<link rel="stylesheet" media="screen" href="/css/footer.css" th:href="@{/css/footer.css}" />
+	
+	<title>Security</title>
+</head>
+<body>
+	<div class="container">
+	
+		<div th:include="layout/_header :: header">
+  			<!-- Header comes here -->
+  		</div> 
+  		 
+		 
+			<div layout:fragment="content">
+				<!-- Contents are inserted here -->
+			</div>
+		
+		<div th:replace="layout/_footer :: footer">
+  			<!-- Footer comes here -->
+  		</div> 
+	
+	</div>
+</body>
+</html>
+  		 
